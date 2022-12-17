@@ -1,0 +1,34 @@
+
+<div class="">
+    <h1>Pipes basicos</h1>
+    <p>
+        Pipes incluidos en Angular - Usualmente en el Common Module
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card 
+        header="uppercase"
+        [subheader]="nombreLower |uppercase" >
+        {{nombreLower | uppercase}}
+    </p-card>
+
+    </div>
+    <div class="col-4">
+
+        <p-card 
+        header="Lowercase"
+        [subheader]="nombreLower |lowercase" >
+        {{nombreLower | lowercase}}
+    </p-card>
+    </div>
+    <div class="col-4">
+
+        <p-card 
+        header="titlecase"
+        [subheader]="nombreCompleto |titlecase" >
+        {{nombreCompleto | titlecase}}
+    </p-card>
+    </div>
+</div>

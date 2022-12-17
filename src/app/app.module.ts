@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-//PRIME NG
-// import {ButtonModule} from 'primeng/button';
-// import {CardModule} from 'primeng/card';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SharedModule } from './shared/shared.module';
+import { AppRouterModule } from './app-router.module';
+import { VentasModule } from './ventas/ventas.module';
 
 
 @NgModule({
@@ -14,8 +14,10 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
     AppComponent
   ],
   imports: [
+    AppRouterModule,
     BrowserModule,
-    PrimeNgModule
+    SharedModule,
+    VentasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
