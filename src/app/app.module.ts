@@ -16,6 +16,10 @@ import localeFr from '@angular/common/locales/fr'
 
 import {registerLocaleData} from '@angular/common'
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 registerLocaleData(localeEs);
 registerLocaleData(localeFr);
 @NgModule({
@@ -26,7 +30,8 @@ registerLocaleData(localeFr);
     AppRouterModule,
     BrowserModule,
     SharedModule,
-    VentasModule
+    VentasModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide:LOCALE_ID,useValue:'es-HN'}
