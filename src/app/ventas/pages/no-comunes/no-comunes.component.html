@@ -10,13 +10,18 @@
 <div class="grid">
     <div class="col md-6">
         <p-fieldset  legend="i18nSelect Pipe" [toggleable]="true">
-            content
+            <p>Saludos {{nombre}},es un placer {{genero | i18nSelect:inviMap}} a nuestro evento</p>
+
+            <button pButton type="button" icon="pi pi-check" label="Cambiar Cliente" (click)="cambiarCliente()" iconPos="left"></button>
+
         </p-fieldset>
     </div>
 
     <div class="col md-6">
         <p-fieldset  legend="i18nPlural Pipe" [toggleable]="true">
-            content
+           <p> Actualmente tenemos {{clientes.length | i18nPlural:clientesMap}}</p>
+
+           <button pButton type="button" icon="pi pi-check" label="Borrar cliente" class="p-button-danger" (click)="borrarCliente()" iconPos="left"></button>
         </p-fieldset>
     </div>
 </div>

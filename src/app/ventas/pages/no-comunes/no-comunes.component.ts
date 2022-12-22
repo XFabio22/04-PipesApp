@@ -6,5 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./no-comunes.component.css']
 })
 export class NoComunesComponent {
+  //i18nSelect
+  nombre:string = 'Susana';
+  genero:string='femenino';
+  inviMap = {
+    'masculino':'invitarlo',
+    'femenino':'invitarla'
+  }
 
+
+   //i18nPlural
+
+   clientes:string[] = ['Maria','pedro','enrique','pablo','Jesus']
+
+   clientesMap={
+    '=0': 'no tenemos ningun cliente esperando',
+    '=1': ' tenemos 1 cliente esperando',
+    '=2': ' tenemos 2 clientes esperando',
+    'other': 'tenemos  # clientes esperando'
+    //other es el argumento , es como un else  y el # es el valor/ largo de el array
+   }
+
+
+   cambiarCliente(){
+      this.nombre = 'Fabio';
+      this.genero = 'masculino';
+   }
+
+
+   borrarCliente(){
+    this.clientes.pop();
+   }
 }
