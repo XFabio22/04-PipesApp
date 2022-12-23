@@ -37,4 +37,31 @@ export class NoComunesComponent {
    borrarCliente(){
     this.clientes.pop();
    }
+
+
+   //KeyValue Pipe
+
+   persona = {
+    nombre: 'Fabio',
+    edad: 18 ,
+    direccion : 'Nacaome Valle, Honduras'
+   }
+
+   //Json Pipe
+
+   heroes = [ 
+    {
+      nombre:'Superman',
+      vuela : true
+    },
+    {
+      nombre:'Robin',
+      vuela : false
+    },
+    {
+      nombre:'Aquaman',
+      vuela : false
+    }
+   ]
+
 }
