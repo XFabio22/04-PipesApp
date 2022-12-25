@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./ordenar.component.css']
 })
 export class OrdenarComponent {
+  enMayusculas:boolean = true;
+
+  toggleMayusculas(){
+    this.enMayusculas = !this.enMayusculas
+  }
 
 }
